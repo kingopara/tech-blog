@@ -50,7 +50,24 @@ router.post('/', (req, res) => {
 
 // login route
 router.post('/login', (req, res) => {
+    User.findOne({
+        where: {
+            email: req.body.email
+        }
+    })
+    .then(dbUserData => {
+        if (!dbUserData) {
+            res.status(400).json({ message: "no user with this email." });
+            return;
+        }
 
+        const validPassword = dbUserData.checkPassword(req.body.password);
+        if (!validPassword) {
+            res.status(400).json({ message: 'Incorrect Password!' });
+            return;
+        }
+        res.json({ user: dbUserData, message: "Logged In!" });
+    });
 });
 
 // put route for /api/users/1
