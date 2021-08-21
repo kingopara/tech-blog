@@ -41,7 +41,10 @@
   p {
     font-size: 1.2rem;
   }
-  
+  a {
+    color: var(--primary);
+  }
+
   .btn {
     font-size: 1.3rem;
     text-decoration:none;
