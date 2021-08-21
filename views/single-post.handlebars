@@ -1,11 +1,19 @@
-<article class="card">
-    <div class="card-header">
-        <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-        <span>({{post.post_url}})</span>
+{{> post-info post}}
+
+{{#if loggedIn}}
+<form class="card-body comment-form">
+    <div>
+        <textarea name="comment-body" class="form-input"></textarea>
     </div>
-    <div class="card-body">
-        posted by {{post.user.username}} on {{post.created_at}}
-        |
-        <a href="/post/{{post.id}}">{{post.comments.length}} comments </a>
+
+    <div>
+        <button class="btn" type="submit">add comment</button>
     </div>
-</article>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
