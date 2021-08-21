@@ -1,0 +1,11 @@
+<article class="card">
+    <div class="card-header">
+        <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
+        <span>({{post.post_url}})</span>
+    </div>
+    <div class="card-body">
+        posted by {{post.user.username}} on {{post.created_at}}
+        |
+        <a href="/post/{{post.id}}">{{post.comments.length}} comments </a>
+    </div>
+</article>
