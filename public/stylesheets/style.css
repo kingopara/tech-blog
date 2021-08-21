@@ -151,6 +151,11 @@
     font-size: 90%;
     color: #7d7d7d;
   }
+
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
   
   .list-group {
     padding: 0;
