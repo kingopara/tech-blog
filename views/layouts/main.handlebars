@@ -18,10 +18,13 @@
                 <button class="btn">
                     <a href="/">Homepage</a>
                 </button>
-                {{#if loggedIn}}
                 <button class="btn">
                     <a href="/dashboard">Dashboard</a>
                 </button>
+                {{#if loggedIn}}
+                {{!-- <button class="btn">
+                    <a href="/dashboard">Dashboard</a>
+                </button> --}}
                 <button id="logout" class="btn" >Signout</button>
                 {{else}}
                 <button class="btn" > 

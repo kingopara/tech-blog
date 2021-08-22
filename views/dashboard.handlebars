@@ -8,7 +8,7 @@
             <input class="form-input" type="text" id="post-title" name="post-title" />
         </div>
         <div>
-            <label for="post-url">Link</label>
+            <label for="post-url">Content</label>
             <input class="form-input" id="post-url" name="post-url" />
         </div>
         <button type="submit" class="btn">Create</button>
@@ -23,7 +23,7 @@
         {{#each posts as |post|}}
         <li>
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link btn-back">Edit Post</a>
         </li>
         {{/each}}
     </ol>

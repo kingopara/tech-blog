@@ -6,11 +6,11 @@
     <form class="edit-post-form">
         <div>
             <input class="form-input" type="text" name="post-title" value="{{post.title}}" />
-            <span>({{format_url post.post_url}})</span>
+            <span>({{post.content}})</span>
         </div>
         <div>
             by you on {{format_date post.created_at}}
-            |
+            <br>
             <a href="/post/{{post.id}}">{{post.comment.length}} {{format_plural "comment" post.comments.length}} </a>
         </div>
         <button type="submit" class="btn">Save Post</button>
