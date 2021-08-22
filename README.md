@@ -5,8 +5,7 @@ AS A developer who writes about tech
 I WANT a (content management system) CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-Link to deployed application on Heroku
-https://tech-blog-app21.herokuapp.com/
+[Link to deployed application on Heroku](https://tech-blog-app21.herokuapp.com/)
 
 ## Table of content
 * [Description](#description)
