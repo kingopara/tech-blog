@@ -94,6 +94,19 @@
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }
+
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
   
   .hero {
     padding: 3% 4%;

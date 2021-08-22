@@ -11,26 +11,28 @@
 <body class="flex-column">
     <div>
         <header class="hero">
-            <h1 >
-                <a href="/">Tech Blog</a>
-            </h1>
             <nav>
-                <button class="btn">
+                {{!-- <button class="btn"> --}}
                     <a href="/">Homepage</a>
-                </button>
-                <button class="btn">
+                {{!-- </button> --}}
+                {{!-- <button class="btn"> --}}
                     <a href="/dashboard">Dashboard</a>
-                </button>
+                {{!-- </button> --}}
                 {{#if loggedIn}}
                 {{!-- <button class="btn">
                     <a href="/dashboard">Dashboard</a>
                 </button> --}}
-                <button id="logout" class="btn" >Signout</button>
+                <button id="logout" class="btn-no-style" >Signout</button>
                 {{else}}
-                <button class="btn" > 
+                {{!-- <button class="btn" >  --}}
                     <a href="/login">Signin</a>
-                </button>
+                {{!-- </button> --}}
                 {{/if}}
+                <br>
+                <h1 class="app-title" >
+                    {{!-- <a href="/">Tech Blog</a> --}}
+                    Tech Blog
+                </h1>
             </nav>
         </header>
         <main>
